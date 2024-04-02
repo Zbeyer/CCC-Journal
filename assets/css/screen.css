@@ -2,11 +2,84 @@
 @import "fonts.css";
 
 :root {
+    /**
+    * BACKGROUND COLORS
+    */
+    --ccc-color-white:  #ffffff;
+    --ccc-color-sand:   #E5D2B8;
+    --white:  var(--ccc-color-white);
+    --sand:   var(--ccc-color-sand);
+
+    /**
+    * TEXT COLORS
+    */
+    --ccc-color-black:  #001020;
+    --ccc-color-blue:   #00464d;
+    --black:  var(--ccc-color-black);
+    --blue:   var(--ccc-color-blue);
+
+    /**
+    * SHADOWS
+    */
+    --ccc-color-shadow: RGBA(0, 10, 30, 50%);
+    --shadow: var(--ccc-color-shadow);
+
+    /**
+    * DEFAULT COLORS
+    */
     --font-sans: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif; /* stylelint-disable-line value-keyword-case */
     --font-serif: Lora, Times, serif; /* stylelint-disable-line value-keyword-case */
-    --color-primary-text: var(--color-black);
-    --color-darker-gray: var(--color-black);
     --head-nav-gap: 3.2rem;
+    --color-primary-text: var(--ccc-color-black);
+    --color-darker-gray: var(--ccc-color-black);
+}
+
+a
+{
+    display: inline-block;
+    min-height: 24px;
+    min-width: 24px;
+    vertical-align: middle;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+
+    border: 2px solid var(--ccc-color-blue) !important;
+    color: var(--ccc-color-blue) !important;
+    border-radius: 8px;
+}
+
+h1
+{
+    text-shadow: var(--shadow) 8px 8px 21px;
+    -webkit-text-stroke: 2px var(--white);
+}
+
+h3, h1 {
+    font-weight: bold;
+    color: var(--ccc-color-blue) !important;
+}
+
+hr
+{
+    border: 2px solid var(--blue);
+}
+
+body
+{
+    font-size: 100%;
+    color:  var(--ccc-color-black);;
+    background-color: var(--white);
+    text-align: center;
+}
+
+main
+{
+    max-width: 1200px;
+    text-align: left;
+    background: var(--sand);
+    border-radius: 13px;
+    box-shadow: 0 5px 8px rgb(0, 0, 0, 33%);
+    margin: auto;
 }
 
 .tag-template .gh-main,
